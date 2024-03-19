@@ -4,7 +4,7 @@ jobs:
   lint:
     runs-on: windows-latest #где разворнуть/собирать
     steps:     #это те самые actions
-      - name: Checkout
+      - name: Checkout #запустись прошу
         uses: actions/checkout@v3
       - name: Install deps
         run: npm ci
