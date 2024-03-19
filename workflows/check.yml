@@ -1,14 +1,10 @@
 name: Check
-on:
-  push:
-    branches:
-      - main
-
+on: push #events
 jobs:
   lint:
-    runs-on: windows-latest
-    steps:
-      - name: Checkout
+    runs-on: windows-latest #где разворнуть/собирать
+    steps:     #это те самые actions
+      - name: Checkout #запустись прошу
         uses: actions/checkout@v3
       - name: Install deps
         run: npm ci
