@@ -1,0 +1,27 @@
+name: Check
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  Hello:
+    runs-on: windows-latest #где разворнуть/собирать
+    steps:
+      - name: Hello, World!
+        run: echo "Hello, World!"
+        
+
+#push #events
+#jobs:
+# lint:
+#   runs-on: windows-latest #где разворнуть/собирать
+#   steps:     #это те самые actions
+#     - name: Checkout
+#       uses: actions/checkout@v3
+#     - name: Install deps
+#       run: npm ci
+#     - name: Lint
+#        run: npm run lint
+      
